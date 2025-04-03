@@ -1,0 +1,116 @@
+#chat-container {
+    /* background-color: white;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* height: 80%; */
+    /*max-height: 500px; */
+
+    position: fixed;
+    bottom: 20px; 
+    right: 100px;  /* Positioned left of chatbot */
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    width: 80%;
+    max-width: 600px;
+    height: 80%;
+    border: 1px solid black;
+    
+}
+
+/* Styling for the chat window */
+#chat-window {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    height: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Styling for the input area */
+#input-container {
+    display: flex;
+    align-items: center;
+}
+
+#user-input {
+    width: 80%;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+#send-button {
+    padding: 10px 15px;
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    background-color: #005a9e;
+}
+
+/* Styling for chat messages */
+.message {
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.user-message {
+    background-color: #e1f5fe;
+    text-align: right;
+}
+
+.agent-message {
+    background-color: #f1f1f1;
+}
+
+#chatbot-image {
+    position: fixed;
+    bottom: 20px;  /* Adjust distance from the bottom */
+    right: 20px;   /* Adjust distance from the right */
+    width: 90px;  /* Adjust size as needed */
+    height: auto;  /* Maintain aspect ratio */
+    z-index: 1000; /* Ensures it stays on top of other elements */
+    outline: none;
+}
+
+#chatbot-image:focus
+{
+    outline: none;
+}
+
+#chatbot-image:focus:not(:focus-visible) {
+    outline: none;
+}
+
+#chatbot-image:active {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+#chatbot-image:focus::before
+{
+    inset: initial !important;
+    border: none !important;
+}
