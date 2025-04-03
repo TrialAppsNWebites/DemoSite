@@ -114,3 +114,19 @@
     inset: initial !important;
     border: none !important;
 }
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+
+  #chatbotIcon {
+    animation: pulse 1.5s infinite;
+  }
+
+  #chatbotIcon:hover {
+    filter: brightness(1.2);
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+  }
